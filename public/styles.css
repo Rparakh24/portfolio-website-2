@@ -175,6 +175,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 60px;
     margin-top: 50px;
+    text-align: center;
 }
 .skill-box{
     height: 150px;
