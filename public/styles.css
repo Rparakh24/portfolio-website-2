@@ -1,0 +1,239 @@
+*{
+    background-color: #11100f;
+    margin: 0;
+    padding: 0;
+}
+/* .spotlight-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.spotlight {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, transparent 70%, rgba(0, 0, 0, 0.7) 100%);
+    border-radius: 50%;
+    /* pointer-events: none; */
+    /* transform: translate(-50%, -50%);
+    transition: 0.1s ease-out; */
+  /* } */ */
+  
+  
+.main{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.main-head{
+    font-size: 80px;
+    font-family: 'Poppins', serif;
+    font-weight: 1100;
+    text-align: left;
+    background: radial-gradient(circle, #2fddc3, #ffffff,#ede7de);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.main-head-three{
+    font-size: 30px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+    font-weight: 1100;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+.main-text{
+    font-size: 15px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    margin-top: 100px;
+}
+.left-fix-content {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    margin-left:40px;
+}
+
+.left-fix-link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 80px;
+}
+.left-fix-content-link {
+    color: #5bac9f;
+    text-decoration: none;
+    color: #5bac9f;
+    width: 200px;
+    height: 30px;
+    font-family: 'Poppins', serif;
+}
+
+.handles{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-right: 475px;
+    margin-top: 100px;
+}
+.handles-icon{
+    color: #5bac9f;
+    font-size: 30px;
+}
+.right-scroll-content {
+    margin-left: 50%; 
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.right-about, .right-skills, .right-projects, .right-por {
+    margin-bottom: 80px;
+    padding: 20px;
+    height: auto;
+    width: 90%;
+}
+
+.right-about p{
+    text-align: justify;
+    font-size: 20px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+}
+/* about done */
+
+.right-por{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    height: auto;
+}
+.box-cover{
+    background-color: #2fddc3;
+    padding: 2px;
+    border-radius: 20px;
+}
+.box{
+    background-color: #11100f;
+    border-radius: 20px;
+}
+.por-box{
+    display: flex;
+    gap: 40px;
+    padding: 2px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.por-img{
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+}
+.por-head{
+    font-size: 25px;
+    color: #2fddc3;
+    font-family: 'Poppins', serif;
+    font-weight: 1100;
+    text-align: left;
+}
+.por-post{
+    font-size: 19px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+    text-align: left;
+}
+.por-content{
+    font-size: 14px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 10px;
+}
+/* por done */
+
+.right-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 50px;
+}
+.skill-box{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
+.skill-name{
+    font-size: 20px;
+    color: #2fddc3;
+    font-family: 'Poppins', serif;
+    font-weight: 900;
+    text-align: center;
+
+}
+.skill-img{
+    height: 110px;
+    width: 110px;
+    border-radius: 20px;
+}
+.right-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    height: auto;
+}
+.project-box{
+    display: flex;
+    gap: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+}
+.project-img{
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+}
+.project-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project-head{
+    font-size: 25px;
+    color: #2fddc3;
+    font-family: 'Poppins', serif;
+    font-weight: 1100;
+    text-align: left;
+}
+.project-desc{
+    font-size: 15px;
+    color: #5bac9f;
+    font-family: 'Poppins', serif;
+    font-weight: 800;
+    text-align: left;
+}
+.project-link{
+    text-decoration: none;
+}
