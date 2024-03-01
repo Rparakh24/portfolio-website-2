@@ -19,23 +19,37 @@ import Project from "./Project";
 import stocksure from "../images/stocksure.png";
 import keeper from "../images/keeper.png";
 import todo from "../images/todo.png";
-
+import myImg from "../images/myImg.jpeg";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import useFollowPointer from "../use-follow-pointer";
 function App() {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
   return (
-    <div>
-      <div className="main spotlight-container">
+    
+      <div className="main ">
+        <motion.div
+        ref={ref}
+        className="spotlight"
+        style={{ position: "fixed", top: y, left: x }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      />
         <div className="content">
           <div className="left-fix-content">
                 <div className="landing-page">
                     <h1 className="main-head">Hi, I'm Ronit</h1>
                     <h3 className="main-head-three">A Developer</h3>
-                    <p className="main-text">A tech enthusiast always looking to learn new technologies.</p>
-                </div>
+                    <p className="main-text">A Tech Enthusiast always looking to learn new technologies.</p>
+          </div>
                 <Links />
                 <Handles />
-          </div>
+        </div>
           <div className="right-scroll-content">
             <div id="about" className="right-about">
+              <div className="my-img-box">
+                <img src={myImg} className="my-img"></img>
+              </div>
               <p>
                 <span>I am a sophomore at Thapar Institute of Engineering and Technology pursuing Electronics and Computer Engineering.
                 </span>While I have a strong foundation in MySQL, Python, C, and OOPS, my current exploration centers around Java and React.Js. Recently, I've developed a keen interest in Marketing and Product Management.
@@ -66,7 +80,6 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
